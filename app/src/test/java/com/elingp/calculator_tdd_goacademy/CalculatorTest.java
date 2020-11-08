@@ -41,4 +41,12 @@ public class CalculatorTest {
     double result = classUnderTest.calculateMultiplication(2);
     assertEquals(4.0, result, DELTA);
   }
+
+  @Test
+  public void givenCalculatorWhenDivideByNonZeroIntegerShouldReturnDouble() {
+    Calculator classUnderTest = new Calculator();
+    classUnderTest.calculateAddition(10);
+    double result = classUnderTest.calculateDivision(5);
+    assertEquals(2.0, result, DELTA);
+  }
 }

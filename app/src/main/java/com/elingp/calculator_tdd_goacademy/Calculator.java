@@ -18,6 +18,11 @@ public class Calculator {
     return this.calculationResult;
   }
 
+  public double calculateDivision(int divisor) {
+    this.calculationResult /= divisor;
+    return this.calculationResult;
+  }
+
   public double cancel() {
     this.calculationResult = 0.0;
     return this.calculationResult;
