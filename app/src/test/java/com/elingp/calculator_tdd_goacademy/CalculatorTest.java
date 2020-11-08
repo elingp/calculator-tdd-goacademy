@@ -49,4 +49,12 @@ public class CalculatorTest {
     double result = classUnderTest.calculateDivision(5);
     assertEquals(2.0, result, DELTA);
   }
+
+  @Test
+  public void givenCalculatorWhenDivideByZeroShouldReturnZero() {
+    Calculator classUnderTest = new Calculator();
+    classUnderTest.calculateAddition(10);
+    double result = classUnderTest.calculateDivision(0);
+    assertEquals(0.0, result, DELTA);
+  }
 }

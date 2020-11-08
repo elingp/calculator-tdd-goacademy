@@ -19,7 +19,7 @@ public class Calculator {
   }
 
   public double calculateDivision(int divisor) {
-    this.calculationResult /= divisor;
+    this.calculationResult = divisor == 0 ? 0.0 : calculationResult / divisor;
     return this.calculationResult;
   }
 
