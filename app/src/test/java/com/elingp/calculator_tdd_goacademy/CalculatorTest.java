@@ -33,4 +33,12 @@ public class CalculatorTest {
     double result = classUnderTest.calculateSubtraction(10);
     assertEquals(-10.0, result, DELTA);
   }
+
+  @Test
+  public void givenCalculatorWhenMultiply2ShouldReturnDouble() {
+    Calculator classUnderTest = new Calculator();
+    classUnderTest.calculateAddition(2);
+    double result = classUnderTest.calculateMultiplication(2);
+    assertEquals(4.0, result, DELTA);
+  }
 }

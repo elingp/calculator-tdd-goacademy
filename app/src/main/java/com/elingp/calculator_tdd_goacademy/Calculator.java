@@ -13,6 +13,11 @@ public class Calculator {
     return this.calculationResult;
   }
 
+  public double calculateMultiplication(int multiplier) {
+    this.calculationResult *= multiplier;
+    return this.calculationResult;
+  }
+
   public double cancel() {
     this.calculationResult = 0.0;
     return this.calculationResult;
