@@ -26,4 +26,11 @@ public class CalculatorTest {
     double result = classUnderTest.calculateAddition(10);
     assertEquals(10.0, result, DELTA);
   }
+
+  @Test
+  public void givenCalculatorWhenSubtractIntegerShouldReturnDouble() {
+    Calculator classUnderTest = new Calculator();
+    double result = classUnderTest.calculateSubtraction(10);
+    assertEquals(-10.0, result, DELTA);
+  }
 }

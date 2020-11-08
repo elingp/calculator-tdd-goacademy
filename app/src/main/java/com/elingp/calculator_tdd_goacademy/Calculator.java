@@ -8,6 +8,11 @@ public class Calculator {
     return this.calculationResult;
   }
 
+  public double calculateSubtraction(int subtractor) {
+    this.calculationResult -= subtractor;
+    return this.calculationResult;
+  }
+
   public double cancel() {
     this.calculationResult = 0.0;
     return this.calculationResult;
