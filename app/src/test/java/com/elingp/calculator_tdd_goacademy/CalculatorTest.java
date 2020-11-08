@@ -19,4 +19,11 @@ public class CalculatorTest {
     double result = classUnderTest.cancel();
     assertEquals(0.0, result, DELTA);
   }
+
+  @Test
+  public void givenCalculatorWhenAddIntegerShouldReturnDouble() {
+    Calculator classUnderTest = new Calculator();
+    double result = classUnderTest.calculateAddition(10);
+    assertEquals(10.0, result, DELTA);
+  }
 }
